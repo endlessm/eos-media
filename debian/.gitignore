@@ -1,0 +1,6 @@
+files
+*.substvars
+*.log
+*~
+endless-os-media/
+endless-os-media.debhelper*

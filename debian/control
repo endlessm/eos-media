@@ -1,0 +1,13 @@
+Source: endless-os-media
+Section: non-free/misc
+Priority: extra
+Maintainer: EndlessMobile <endlessmobile@gmail.com>
+Build-Depends: debhelper (>= 7.0.0)
+Standards-Version: 3.9.2
+Homepage: http://www.endlessm.com
+
+Package: endless-os-media
+Architecture: all
+Depends: 
+Description: EndlessOS default media
+ This is a package that contains the default media files (images, music, etc.)
