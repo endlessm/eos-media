@@ -1,3 +1,9 @@
+endless-os-media (1.0.15~rc2) unstable; urgency=low
+
+  * Updating version to 1.0.15~rc2
+
+ -- Asynchrony <kamiller@asolutions.com>  Mon, 12 Nov 2012 08:21:01 -0600
+
 endless-os-media (1.0.16) unstable; urgency=low
 
   * Initial release 
