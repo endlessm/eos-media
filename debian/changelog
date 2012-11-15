@@ -1,3 +1,9 @@
+endless-os-media (1.0.15~rc6) unstable; urgency=low
+
+  * Updating version to 1.0.15~rc6
+
+ -- Asynchrony <caspian311@asolutions.com>  Thu, 15 Nov 2012 15:42:43 -0600
+
 endless-os-media (1.0.15~rc5) unstable; urgency=low
 
   * Updating version to 1.0.15~rc5
