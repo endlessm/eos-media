@@ -1,3 +1,9 @@
+
+endless-os-media (1.0.15~rc3) unstable; urgency=low
+    * Updating default file install location
+
+ -- Asynchrony <erik.wolfe@asolutions.com>  Fri, 16 Nov 2012 12:19:00 -0600
+
 endless-os-media (1.0.15~rc3) unstable; urgency=low
 
   * Updating version to 1.0.15~rc3
@@ -12,6 +18,6 @@ endless-os-media (1.0.15~rc2) unstable; urgency=low
 
 endless-os-media (1.0.16) unstable; urgency=low
 
-  * Initial release 
+  * Initial release
 
- -- erik.wolfe <endlessmobile@gmail.com>  Fri, 09 Nov 2012 13:12:18 -0600 
+ -- erik.wolfe <endlessmobile@gmail.com>  Fri, 09 Nov 2012 13:12:18 -0600
