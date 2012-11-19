@@ -1,3 +1,9 @@
+endless-os-media (1.0.15) unstable; urgency=low
+
+  * Updating version to 1.0.15
+
+ -- Asynchrony <matt.todd@asolutions.com>  Mon, 19 Nov 2012 08:24:55 -0600
+
 endless-os-media (1.0.15~rc7) unstable; urgency=low
 
   * Updating version to 1.0.15~rc7
