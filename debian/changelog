@@ -42,6 +42,6 @@ endless-os-media (1.0.15~rc2) unstable; urgency=low
 
 endless-os-media (1.0.16) unstable; urgency=low
 
-  * Initial release 
+  * Initial release
 
- -- erik.wolfe <endlessmobile@gmail.com>  Fri, 09 Nov 2012 13:12:18 -0600 
+ -- erik.wolfe <endlessmobile@gmail.com>  Fri, 09 Nov 2012 13:12:18 -0600
