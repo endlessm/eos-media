@@ -1,8 +1,32 @@
+endless-os-media (1.0.15) unstable; urgency=low
 
-endless-os-media (1.0.15~rc3) unstable; urgency=low
-    * Updating default file install location
+  * Updating version to 1.0.15
 
- -- Asynchrony <erik.wolfe@asolutions.com>  Fri, 16 Nov 2012 12:19:00 -0600
+ -- Asynchrony <matt.todd@asolutions.com>  Mon, 19 Nov 2012 08:24:55 -0600
+
+endless-os-media (1.0.15~rc7) unstable; urgency=low
+
+  * Updating version to 1.0.15~rc7
+
+ -- Asynchrony <matt.todd@asolutions.com>  Fri, 16 Nov 2012 15:06:44 -0600
+
+endless-os-media (1.0.15~rc6) unstable; urgency=low
+
+  * Updating version to 1.0.15~rc6
+
+ -- Asynchrony <caspian311@asolutions.com>  Thu, 15 Nov 2012 15:42:43 -0600
+
+endless-os-media (1.0.15~rc5) unstable; urgency=low
+
+  * Updating version to 1.0.15~rc5
+
+ -- Asynchrony <srdjan.grubor@asolutions.com>  Wed, 14 Nov 2012 16:27:36 -0600
+
+endless-os-media (1.0.15~rc4) unstable; urgency=low
+
+  * Updating version to 1.0.15~rc4
+
+ -- Asynchrony <srdjan.grubor@asolutions.com>  Wed, 14 Nov 2012 14:37:29 -0600
 
 endless-os-media (1.0.15~rc3) unstable; urgency=low
 
