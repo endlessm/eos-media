@@ -10,7 +10,7 @@ pushd `dirname $0`
 		rm -rf *.changes
    set -e
 
-	pushd ../eos-installer &> /dev/null
+	pushd ../eos-build &> /dev/null
       INSTALL_DIR=$(pwd)
 		export GNUPGHOME=${INSTALL_DIR}/gnupg
 	popd &> /dev/null
