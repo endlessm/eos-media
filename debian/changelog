@@ -2,6 +2,12 @@ endless-os-media (1.0.16) unstable; urgency=low
 
   * Updating version to 1.0.16
 
+ -- Asynchrony <matt.todd@asolutions.com>  Mon, 03 Dec 2012 20:47:38 -0600
+
+endless-os-media (1.0.16) unstable; urgency=low
+
+  * Updating version to 1.0.16
+
  -- Asynchrony <srdjan.grubor@asolutions.com>  Mon, 03 Dec 2012 19:44:13 -0600
 
 endless-os-media (1.0.16~rc5) unstable; urgency=low
