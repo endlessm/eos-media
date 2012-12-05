@@ -21,5 +21,5 @@ pushd `dirname $0`
   # Move package to this directory and clean up
    mv ../*os-media*.deb .
    mv ../*os-media*.changes .
-   rm ../*.build
+   rm -f ../*.build
 popd
