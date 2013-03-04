@@ -19,7 +19,7 @@ pushd `dirname $0`
   debuild -k4EB55A92 -b
   
   # Move package to this directory and clean up
-   mv ../*os-media*.deb .
-   mv ../*os-media*.changes .
+   mv ../endlessos-base-media*.deb .
+   mv ../endlessos-base-media*.changes .
    rm -f ../*.build
 popd
