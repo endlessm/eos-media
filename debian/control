@@ -1,4 +1,4 @@
-Source: endless-os-media
+Source: endlessos-base-media
 Section: non-free/misc
 Priority: extra
 Maintainer: EndlessMobile <endlessmobile@gmail.com>
@@ -6,7 +6,10 @@ Build-Depends: debhelper (>= 7.0.0)
 Standards-Version: 3.9.2
 Homepage: http://www.endlessm.com
 
-Package: endless-os-media
+Package: endlessos-base-media
+Replaces: endless-os-media
+Conflicts: endless-os-media
+Provides: endless-os-media
 Architecture: all
 Depends: 
 Description: EndlessOS default media
