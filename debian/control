@@ -4,7 +4,8 @@ Priority: extra
 Maintainer: Endless Mobile <maintainers@endlessm.com>
 Build-Depends: debhelper (>= 7.0.0),
                cdbs,
-               gnome-pkg-tools
+               gnome-pkg-tools,
+               dh-autoreconf      
 Standards-Version: 3.9.2
 Homepage: http://www.endlessm.com
 
