@@ -1,8 +1,6 @@
 AC_INIT([eos-media],
         [1.0], [http://www.endlessm.com])
 
-AC_CONFIG_MACRO_DIR([m4])
-
 AM_INIT_AUTOMAKE([1.10 no-dist-gzip dist-xz foreign])
 AM_MAINTAINER_MODE([enable])
 
