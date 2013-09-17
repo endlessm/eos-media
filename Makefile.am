@@ -1,0 +1,12 @@
+media_directories = default_images default_music
+
+install-data-local:
+	for directory in $(media_directories); do \
+		$(mkdir_p) $(DESTDIR)$(datadir)/eos-media; \
+		cp -a $(srcdir)/default_files/$$directory $(DESTDIR)$(datadir)/eos-media; \
+	done
+
+uninstall-local:
+	for directory in $(media_directories); do \
+		rm -rf $(DESTDIR)$(datadir)/eos-media/$$directory; \
+	done
