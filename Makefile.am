@@ -10,3 +10,5 @@ uninstall-local:
 	for directory in $(media_directories); do \
 		rm -rf $(DESTDIR)$(datadir)/eos-media/$$directory; \
 	done
+
+bin_SCRIPTS = eos-link-user-dirs
