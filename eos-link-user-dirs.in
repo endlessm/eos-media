@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INSTALL_DIR=/usr/share/eos-media
+INSTALL_DIR=@DATA_DIR@/eos-media
 
 # Get the localized names of the user's music and pictures folders
 MUSIC_DIR=`xdg-user-dir MUSIC`
