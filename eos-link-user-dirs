@@ -7,5 +7,5 @@ MUSIC_DIR=`xdg-user-dir MUSIC`
 PICTURES_DIR=`xdg-user-dir PICTURES`
 
 # Create symlinks to the default media within the user's music and pictures
-ln -nsf $INSTALL_DIR/default_files/default_music $MUSIC_DIR/eos-media
-ln -nsf $INSTALL_DIR/default_files/default_images $PICTURES_DIR/eos-media
+ln -nsf $INSTALL_DIR/default_music $MUSIC_DIR/eos-media
+ln -nsf $INSTALL_DIR/default_images $PICTURES_DIR/eos-media
