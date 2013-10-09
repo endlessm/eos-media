@@ -1,8 +1,26 @@
-eos-media (1.1.5~dev1) unstable; urgency=low
+eos-media (1.2.0~rc1) unstable; urgency=low
 
-  * Updating version to 1.1.5~dev1
+  * Updating version to 1.2.0~rc1
 
- -- Roddy Shuler <roddy@endlessm.com>  Thu, 12 Sep 2013 13:32:38 -0500
+ -- Roddy Shuler <roddy@endlessm.com>  Wed, 09 Oct 2013 02:10:43 -0700
+
+eos-media (1.1.5) unstable; urgency=low
+
+  * Updating version to 1.1.5
+
+ -- Roddy Shuler <roddy@endlessm.com>  Fri, 27 Sep 2013 21:43:58 -0700
+
+eos-media (1.1.5~rc2) unstable; urgency=low
+
+  * Updating version to 1.1.5~rc2
+
+ -- Roddy Shuler <roddy@endlessm.com>  Thu, 26 Sep 2013 17:01:03 -0700
+
+eos-media (1.1.5~rc1) unstable; urgency=low
+
+  * Updating version to 1.1.5~rc1
+
+ -- Roddy Shuler <roddy@endlessm.com>  Tue, 17 Sep 2013 13:43:02 -0500
 
 eos-media (1.0) unstable; urgency=low
 
