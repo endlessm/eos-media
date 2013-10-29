@@ -37,6 +37,9 @@ uninstall-local:
 		rm -rf $(DESTDIR)$(datadir)/eos-media/$$directory; \
 	done
 
+getting_starteddir = $(datadir)/EndlessOS/getting-started
+getting_started_DATA = getting-started/endless-getting-started.mov
+
 dist_noinst_DATA = \
 	$(images_archive) \
 	$(music_archive) \
@@ -44,5 +47,9 @@ dist_noinst_DATA = \
 
 bin_SCRIPTS = eos-link-user-dirs
 
-EXTRA_DIST = eos-link-user-dirs.in
+EXTRA_DIST = \
+	eos-link-user-dirs.in \
+	$(getting_started_DATA) \
+	$(NULL)
+
 CLEANFILES = eos-link-user-dirs
