@@ -37,7 +37,7 @@ uninstall-local:
 		rm -rf $(DESTDIR)$(datadir)/eos-media/$$directory; \
 	done
 
-getting_starteddir = $(datadir)/EndlessOS/getting-started
+getting_starteddir = $(datadir)/EndlessOS/getting-started/C
 getting_started_DATA = getting-started/endless-getting-started.mov
 
 dist_noinst_DATA = \
