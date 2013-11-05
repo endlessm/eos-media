@@ -2,6 +2,8 @@
 *.deb
 *.changes
 *.log
+*.tar
+*.tar.xz
 Makefile
 Makefile.in
 aclocal.m4
