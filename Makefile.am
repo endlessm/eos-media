@@ -50,6 +50,9 @@ getting_started_DATA = getting-started/C/endless-getting-started.mov
 getting_started_esdir = $(datadir)/EndlessOS/getting-started/es
 getting_started_es_DATA = getting-started/es/endless-getting-started.mov
 
+getting_started_ptdir = $(datadir)/EndlessOS/getting-started/pt
+getting_started_pt_DATA = getting-started/pt/endless-getting-started.mov
+
 dist_noinst_DATA = \
 	$(images_archive) \
 	$(music_archive) \
@@ -62,6 +65,7 @@ EXTRA_DIST = \
 	eos-link-user-dirs.in \
 	$(getting_started_DATA) \
 	$(getting_started_es_DATA) \
+	$(getting_started_pt_DATA) \
 	$(NULL)
 
 CLEANFILES = eos-link-user-dirs
