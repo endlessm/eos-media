@@ -1,3 +1,5 @@
+SUBDIRS = data
+
 media_directories = default_images default_music default_videos
 
 do_subst = sed -e 's|@DATA_DIR[@]|$(datadir)|g'
