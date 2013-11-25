@@ -1,3 +1,5 @@
+SUBDIRS = data
+
 media_directories = default_images default_music default_videos
 
 do_subst = sed -e 's|@DATA_DIR[@]|$(datadir)|g'
@@ -31,12 +33,15 @@ install-data-hook:
 	$(mkdir_p) $(DESTDIR)$(datadir)/eos-media/default_images
 	cd $(DESTDIR)$(datadir)/eos-media/default_images && \
 	tar --no-same-owner -xvf $(abs_srcdir)/$(images_archive)
+	rm -f $(abs_srcdir)/$(images_archive)
 	$(mkdir_p) $(DESTDIR)$(datadir)/eos-media/default_music
 	cd $(DESTDIR)$(datadir)/eos-media/default_music && \
 	tar --no-same-owner -xvf $(abs_srcdir)/$(music_archive)
+	rm -f $(abs_srcdir)/$(music_archive)
 	$(mkdir_p) $(DESTDIR)$(datadir)/eos-media/default_videos
 	cd $(DESTDIR)$(datadir)/eos-media/default_videos && \
 	tar --no-same-owner -xvf $(abs_srcdir)/$(videos_archive)
+	rm -f $(abs_srcdir)/$(videos_archive)
 
 # Rule to uninstall the unzipped files
 uninstall-local:

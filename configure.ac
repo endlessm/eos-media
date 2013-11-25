@@ -8,5 +8,6 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 AC_CONFIG_FILES([
 Makefile
+data/Makefile
 ])
 AC_OUTPUT
