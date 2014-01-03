@@ -1,13 +1,24 @@
 #!/bin/bash
 
 INSTALL_DIR=@DATA_DIR@/eos-media
+CONTENT_DIR=/var/endless/documents
 
-# Get the localized names of the user's music and pictures folders
+# Get the localized names of the user's data folders
 MUSIC_DIR=`xdg-user-dir MUSIC`
 PICTURES_DIR=`xdg-user-dir PICTURES`
 VIDEOS_DIR=`xdg-user-dir VIDEOS`
+DOCUMENTS_DIR=`xdg-user-dir DOCUMENTS`
 
 # Create symlinks to the default media within the user's music and pictures
 ln -nsf $INSTALL_DIR/default_music $MUSIC_DIR/eos-media
 ln -nsf $INSTALL_DIR/default_images $PICTURES_DIR/eos-media
 ln -nsf $INSTALL_DIR/default_videos $VIDEOS_DIR/eos-media
+
+# Create symlinks to document content
+for content in $CONTENT_DIR/*; do
+    file=`basename "$content"`
+    ln -nsf "$content" $DOCUMENTS_DIR/"$file"
+done
+
+# Remove any broken symlinks due to content that has been removed
+find $DOCUMENTS_DIR -maxdepth 1 -xtype l -delete
