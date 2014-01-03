@@ -10,9 +10,14 @@ VIDEOS_DIR=`xdg-user-dir VIDEOS`
 DOCUMENTS_DIR=`xdg-user-dir DOCUMENTS`
 
 # Create symlinks to the default media within the user's music and pictures
-ln -nsf $INSTALL_DIR/default_music $MUSIC_DIR/eos-media
-ln -nsf $INSTALL_DIR/default_images $PICTURES_DIR/eos-media
-ln -nsf $INSTALL_DIR/default_videos $VIDEOS_DIR/eos-media
+ln -nsf $INSTALL_DIR/default_music $MUSIC_DIR/Endless
+ln -nsf $INSTALL_DIR/default_images $PICTURES_DIR/Endless
+ln -nsf $INSTALL_DIR/default_videos $VIDEOS_DIR/Endless
+
+# Remove old symlinks (created with the link name of eos-media)
+find $MUSIC_DIR -maxdepth 1 -type l -name eos-media -delete
+find $PICTURES_DIR -maxdepth 1 -type l -name eos-media -delete
+find $VIDEOS_DIR -maxdepth 1 -type l -name eos-media -delete
 
 # Create symlinks to document content
 for content in $CONTENT_DIR/*; do
