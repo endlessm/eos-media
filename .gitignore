@@ -10,7 +10,6 @@ aclocal.m4
 autom4te.cache/
 config.status
 configure
-eos-link-user-dirs
 install-sh
 missing
 data/endlessos-backgrounds-*.xml

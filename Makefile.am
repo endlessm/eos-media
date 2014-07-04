@@ -1,11 +1,5 @@
 SUBDIRS = data
 
-do_subst = sed -e 's|@DATA_DIR[@]|$(datadir)|g'
-
-eos-link-user-dirs: eos-link-user-dirs.in Makefile
-	$(AM_V_GEN) $(do_subst) $< > $@
-	chmod +x $@
-
 getting_starteddir = $(datadir)/EndlessOS/getting-started/C
 getting_started_DATA = getting-started/C/endless-getting-started.mov
 
@@ -18,14 +12,13 @@ getting_started_pt_DATA = getting-started/pt/endless-getting-started.mov
 bin_SCRIPTS = eos-link-user-dirs
 
 EXTRA_DIST = \
-	eos-link-user-dirs.in \
+	eos-link-user-dirs \
 	$(getting_started_DATA) \
 	$(getting_started_es_DATA) \
 	$(getting_started_pt_DATA) \
 	$(NULL)
 
 CLEANFILES = \
-	eos-link-user-dirs \
 	$(NULL)
 
 # We want to distribute and install files that have spaces in them. Make
@@ -44,10 +37,6 @@ CLEANFILES = \
 # the shell driving the build.
 images_srcdir = $(srcdir)/default_files/default_images
 images_instdir = $(pkgdatadir)/default_images
-music_srcdir = $(srcdir)/default_files/default_music
-music_instdir = $(pkgdatadir)/default_music
-videos_srcdir = $(srcdir)/default_files/default_videos
-videos_instdir = $(pkgdatadir)/default_videos
 
 # The make functions defined here are just for convenience, but they
 # avoid a lot of duplicated commands below. This does mean we require
@@ -69,15 +58,9 @@ uninstall_pattern = \
 
 install-data-local:
 	@$(call install_pattern,$(images_instdir),$(images_srcdir)/*)
-	@$(call install_pattern,$(music_instdir),$(music_srcdir)/*)
-	@$(call install_pattern,$(videos_instdir),$(videos_srcdir)/*)
 uninstall-local:
 	@$(call uninstall_pattern,$(images_instdir),$(images_srcdir)/*)
-	@$(call uninstall_pattern,$(music_instdir),$(music_srcdir)/*)
-	@$(call uninstall_pattern,$(videos_instdir),$(videos_srcdir)/*)
 
 EXTRA_DIST += \
 	$(images_srcdir) \
-	$(music_srcdir) \
-	$(videos_srcdir) \
 	$(NULL)
