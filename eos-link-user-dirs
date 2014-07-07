@@ -10,4 +10,4 @@ VIDEOS_DIR=`xdg-user-dir VIDEOS`
 # Create symlinks to the default media within the user's music and pictures
 ln -nsf $MEDIA_DIR/music $MUSIC_DIR/Samples
 ln -nsf $MEDIA_DIR/pictures $PICTURES_DIR/Samples
-ln -nsf $MEDIA_DIR/videos_videos $VIDEOS_DIR/Samples
+ln -nsf $MEDIA_DIR/videos $VIDEOS_DIR/Samples
