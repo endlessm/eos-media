@@ -1,29 +1,13 @@
 #!/bin/bash
 
-CONTENT_DIR=/var/endless/documents
 MEDIA_DIR=/var/endless-content
 
 # Get the localized names of the user's data folders
 MUSIC_DIR=`xdg-user-dir MUSIC`
 PICTURES_DIR=`xdg-user-dir PICTURES`
 VIDEOS_DIR=`xdg-user-dir VIDEOS`
-DOCUMENTS_DIR=`xdg-user-dir DOCUMENTS`
 
 # Create symlinks to the default media within the user's music and pictures
 ln -nsf $MEDIA_DIR/music $MUSIC_DIR/Samples
 ln -nsf $MEDIA_DIR/pictures $PICTURES_DIR/Samples
 ln -nsf $MEDIA_DIR/videos_videos $VIDEOS_DIR/Samples
-
-# Remove old symlinks (created with the link name of eos-media)
-find $MUSIC_DIR -maxdepth 1 -type l -name eos-media -delete
-find $PICTURES_DIR -maxdepth 1 -type l -name eos-media -delete
-find $VIDEOS_DIR -maxdepth 1 -type l -name eos-media -delete
-
-# Create symlinks to document content
-for content in $CONTENT_DIR/*; do
-    file=`basename "$content"`
-    ln -nsf "$content" $DOCUMENTS_DIR/"$file"
-done
-
-# Remove any broken symlinks due to content that has been removed
-find $DOCUMENTS_DIR -maxdepth 1 -xtype l -delete
