@@ -3,7 +3,7 @@ personalities = Brazil Global Guatemala
 all-local:
 	for personality in $(personalities); do \
 	  perskey=`echo "$$personality" | tr "[:upper:]" "[:lower:]"`; \
-	  persfiles=`for file in \`find $(top_srcdir)/default_files/default_images -name "bg_$$perskey\_*.jpg"\`; do echo $$file; done | sort`; \
+	  persfiles=`for file in \`find $(top_srcdir)/default_files/default_images -name "*.jpg"\`; do echo $$file; done | sort`; \
 	  xmlfile="endlessos-backgrounds-$$personality.xml"; \
 	  ( echo "<?xml version=\"1.0\"?>"; \
 	    echo "<!DOCTYPE wallpapers SYSTEM \"gnome-wp-list.dtd\">"; \
