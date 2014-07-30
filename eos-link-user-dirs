@@ -1,13 +1,38 @@
 #!/bin/bash
 
+function update_link {
+  orig=$1
+  dest=$2
+  samples="$3"
+
+  pushd .
+  cd $dest
+  # Remove previous directory
+  PREVIOUS=`readlink .samples`
+  [ -z "$PREVIOUS" ] || rm -f "$PREVIOUS"
+  ln -nsf $1 "$2/$3"
+  ln -nsf "$3" .samples
+  popd
+}
+
 MEDIA_DIR=/var/endless-content
+
+# Find the translated string to use
+declare -A SAMPLES
+SAMPLES[C]="Samples"
+SAMPLES[es]="Ejemplos"
+SAMPLES[pt]="Amostras"
+
+CURRENT_LANGUAGE=`echo -n $LANG | cut -d_ -f1`
+SAMPLES_TRANS=${SAMPLES[$CURRENT_LANGUAGE]:-${SAMPLES[C]}}
 
 # Get the localized names of the user's data folders
 MUSIC_DIR=`xdg-user-dir MUSIC`
 PICTURES_DIR=`xdg-user-dir PICTURES`
 VIDEOS_DIR=`xdg-user-dir VIDEOS`
 
-# Create symlinks to the default media within the user's music and pictures
-ln -nsf $MEDIA_DIR/music $MUSIC_DIR/Samples
-ln -nsf $MEDIA_DIR/pictures $PICTURES_DIR/Samples
-ln -nsf $MEDIA_DIR/videos $VIDEOS_DIR/Samples
+# Create symlinks to the default media within the user's music and picture
+update_link $MEDIA_DIR/music $MUSIC_DIR "$SAMPLES_TRANS"
+update_link $MEDIA_DIR/pictures $PICTURES_DIR "$SAMPLES_TRANS"
+update_link $MEDIA_DIR/videos $VIDEOS_DIR "$SAMPLES_TRANS"
+
