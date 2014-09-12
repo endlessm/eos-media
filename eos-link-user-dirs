@@ -20,6 +20,7 @@ MEDIA_DIR=/var/endless-content
 # Find the translated string to use
 declare -A SAMPLES
 SAMPLES[C]="Samples"
+SAMPLES[fr]="Exemples"
 SAMPLES[es]="Ejemplos"
 SAMPLES[pt]="Amostras"
 
