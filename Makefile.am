@@ -1,21 +1,9 @@
 SUBDIRS = data
 
-getting_starteddir = $(datadir)/EndlessOS/getting-started/C
-getting_started_DATA = getting-started/C/endless-getting-started.mov
-
-getting_started_esdir = $(datadir)/EndlessOS/getting-started/es
-getting_started_es_DATA = getting-started/es/endless-getting-started.mov
-
-getting_started_ptdir = $(datadir)/EndlessOS/getting-started/pt
-getting_started_pt_DATA = getting-started/pt/endless-getting-started.mov
-
 bin_SCRIPTS = eos-link-user-dirs
 
 EXTRA_DIST = \
 	eos-link-user-dirs \
-	$(getting_started_DATA) \
-	$(getting_started_es_DATA) \
-	$(getting_started_pt_DATA) \
 	$(NULL)
 
 CLEANFILES = \
