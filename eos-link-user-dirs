@@ -1,40 +1,51 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
-function update_link {
-  orig=$1
-  dest=$2
-  samples="$3"
+from gi.repository import GLib
+import locale
+import os
 
-  pushd .
-  cd $dest
-  # Remove previous directory
-  PREVIOUS=`readlink .samples`
-  [ -z "$PREVIOUS" ] || rm -f "$PREVIOUS"
-  ln -nsf $1 "$2/$3"
-  ln -nsf "$3" .samples
-  popd
-}
+samples = { 'C':  "Samples",
+            'ar': "عينات",
+            'fr': "Exemples",
+            'es': "Ejemplos",
+            'pt': "Amostras" }
 
-MEDIA_DIR=/var/endless-content
+media_dir="/var/endless-content"
 
-# Find the translated string to use
-declare -A SAMPLES
-SAMPLES[C]="Samples"
-SAMPLES[ar]="عينات"
-SAMPLES[fr]="Exemples"
-SAMPLES[es]="Ejemplos"
-SAMPLES[pt]="Amostras"
+def get_samples(locale):
+    if locale in samples:
+        return samples[locale]
 
-CURRENT_LANGUAGE=`echo -n $LANG | cut -d_ -f1`
-SAMPLES_TRANS=${SAMPLES[$CURRENT_LANGUAGE]:-${SAMPLES[C]}}
+    generic_locale = locale.split("_")[0]
+    if generic_locale == locale:
+        return samples['C']
+    else:
+        return get_samples(generic_locale)
+    
 
-# Get the localized names of the user's data folders
-MUSIC_DIR=`xdg-user-dir MUSIC`
-PICTURES_DIR=`xdg-user-dir PICTURES`
-VIDEOS_DIR=`xdg-user-dir VIDEOS`
+def update_dir_link(orig, dest, new_locale):
+    samples_file = os.path.join(dest, ".samples")
+    if os.path.islink(samples_file):
+        current_dir = os.readlink(samples_file)
+        if not os.path.isabs(current_dir):
+            current_dir = os.path.join(dest, current_dir)
+        if os.path.islink(current_dir):
+            os.remove(current_dir)
+    else:
+        return
 
-# Create symlinks to the default media within the user's music and picture
-update_link $MEDIA_DIR/music $MUSIC_DIR "$SAMPLES_TRANS"
-update_link $MEDIA_DIR/pictures $PICTURES_DIR "$SAMPLES_TRANS"
-update_link $MEDIA_DIR/videos $VIDEOS_DIR "$SAMPLES_TRANS"
+    new_dir = os.path.join(dest, get_samples(new_locale))
+    if os.path.exists(new_dir):
+        return
+
+    os.remove(samples_file)
+    os.symlink(orig, new_dir)
+    os.symlink(new_dir, samples_file)
+
+
+new_locale = locale.getdefaultlocale()[0]
+
+update_dir_link(os.path.join(media_dir, "music"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_MUSIC), new_locale)
+update_dir_link(os.path.join(media_dir, "pictures"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_PICTURES), new_locale)
+update_dir_link(os.path.join(media_dir, "videos"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_VIDEOS), new_locale)
 
