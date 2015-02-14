@@ -1,4 +1,4 @@
-personalities = Arabic Brazil Global Guatemala Haiti
+personalities = Arabic Brazil Global Guatemala Haiti Spanish
 
 all-local:
 	for personality in $(personalities); do \
