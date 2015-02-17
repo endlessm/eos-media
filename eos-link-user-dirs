@@ -1,40 +1,109 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
-function update_link {
-  orig=$1
-  dest=$2
-  samples="$3"
+from gi.repository import GLib
+from subprocess import call
+import csv
+import locale
+import os
+import shutil
+import tempfile
 
-  pushd .
-  cd $dest
-  # Remove previous directory
-  PREVIOUS=`readlink .samples`
-  [ -z "$PREVIOUS" ] || rm -f "$PREVIOUS"
-  ln -nsf $1 "$2/$3"
-  ln -nsf "$3" .samples
-  popd
-}
+SAMPLES = { 'C':  "Samples",
+            'ar': "عينات",
+            'fr': "Exemples",
+            'es': "Ejemplos",
+            'pt': "Amostras" }
 
-MEDIA_DIR=/var/endless-content
+SAMPLES_LINK = ".samples"
+MEDIA_DIR = "/var/endless-content"
 
-# Find the translated string to use
-declare -A SAMPLES
-SAMPLES[C]="Samples"
-SAMPLES[ar]="عينات"
-SAMPLES[fr]="Exemples"
-SAMPLES[es]="Ejemplos"
-SAMPLES[pt]="Amostras"
+LICENSE_XLS = "LICENSE.xls"
+LICENSE_CSV = "LICENSE.csv"
 
-CURRENT_LANGUAGE=`echo -n $LANG | cut -d_ -f1`
-SAMPLES_TRANS=${SAMPLES[$CURRENT_LANGUAGE]:-${SAMPLES[C]}}
 
-# Get the localized names of the user's data folders
-MUSIC_DIR=`xdg-user-dir MUSIC`
-PICTURES_DIR=`xdg-user-dir PICTURES`
-VIDEOS_DIR=`xdg-user-dir VIDEOS`
+def create_csv(orig, dest):
+    temp = tempfile.mkdtemp()
+    orig_file = os.path.basename(orig)
+    split_file = os.path.splitext(orig_file)
+    csv_file = os.path.join(temp, split_file[0] + '.csv')
+    call(['libreoffice', '--headless', '--convert-to', 'csv', '--outdir', temp, orig])
+    call(['iconv', '-f', 'cp1250', '-t', 'utf-8', csv_file, '-o', dest])
+    shutil.rmtree(temp)
 
-# Create symlinks to the default media within the user's music and picture
-update_link $MEDIA_DIR/music $MUSIC_DIR "$SAMPLES_TRANS"
-update_link $MEDIA_DIR/pictures $PICTURES_DIR "$SAMPLES_TRANS"
-update_link $MEDIA_DIR/videos $VIDEOS_DIR "$SAMPLES_TRANS"
 
+def get_title(row, locale):
+    filename_row = 'File name [' + locale + ']'
+    if filename_row in row:
+        return row[filename_row]
+
+    generic_locale = locale.split("_")[0]
+    if generic_locale == locale:
+        return row['File name']
+    else:
+        return get_title(row, generic_locale)
+
+
+def rename_file_locale(directory, csvreader, to_locale):
+    for row in csvreader:
+        for key in row.keys():
+            if not key.startswith("File name"):
+                continue
+            from_filename = os.path.join(directory, row[key])
+            if os.path.exists(from_filename):
+                break
+        to_title = get_title(row, to_locale)
+        if not os.path.exists(from_filename) or not to_title:
+            continue
+        to_filename = os.path.join(directory, to_title)
+        if from_filename != to_filename:
+            os.rename(from_filename, to_filename)
+
+
+def update_files_locale(directory, to_locale):
+    temp_dir = tempfile.gettempdir()
+    license_file = os.path.join(temp_dir, LICENSE_CSV)
+    create_csv(os.path.join(directory, LICENSE_XLS), license_file)
+    with open(license_file) as csv_file:
+        csvreader = csv.DictReader(csv_file)
+        rename_file_locale(directory, csvreader, to_locale)
+    os.remove(license_file)
+
+
+def get_samples(locale):
+    if locale in SAMPLES:
+        return SAMPLES[locale]
+
+    generic_locale = locale.split("_")[0]
+    if generic_locale == locale:
+        return SAMPLES['C']
+    else:
+        return get_samples(generic_locale)
+    
+
+def update_dir_link(orig, dest, new_locale):
+    samples_file = os.path.join(dest, SAMPLES_LINK)
+    if os.path.islink(samples_file):
+        current_dir = os.readlink(samples_file)
+        if not os.path.isabs(current_dir):
+            current_dir = os.path.join(dest, current_dir)
+        if os.path.islink(current_dir):
+            os.remove(current_dir)
+    else:
+        return
+
+    new_dir = os.path.join(dest, get_samples(new_locale))
+    if os.path.exists(new_dir):
+        return
+
+    os.remove(samples_file)
+    os.symlink(orig, new_dir)
+    os.symlink(new_dir, samples_file)
+
+
+new_locale = locale.getdefaultlocale()[0]
+
+update_dir_link(os.path.join(MEDIA_DIR, "music"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_MUSIC), new_locale)
+update_dir_link(os.path.join(MEDIA_DIR, "pictures"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_PICTURES), new_locale)
+update_dir_link(os.path.join(MEDIA_DIR, "videos"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_VIDEOS), new_locale)
+
+update_files_locale(os.path.join(MEDIA_DIR, "videos"), new_locale);
