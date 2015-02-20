@@ -88,14 +88,12 @@ def update_dir_link(orig, dest, new_locale):
             current_dir = os.path.join(dest, current_dir)
         if os.path.islink(current_dir):
             os.remove(current_dir)
-    else:
-        return
+        os.remove(samples_file)
 
     new_dir = os.path.join(dest, get_samples(new_locale))
     if os.path.exists(new_dir):
         return
 
-    os.remove(samples_file)
     os.symlink(orig, new_dir)
     os.symlink(new_dir, samples_file)
 
