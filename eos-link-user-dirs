@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 
 from gi.repository import GLib
-from subprocess import call
 import csv
 import locale
 import os
-import shutil
-import tempfile
 
 SAMPLES = { 'C':  "Samples",
             'ar': "عينات",
@@ -17,18 +14,7 @@ SAMPLES = { 'C':  "Samples",
 SAMPLES_LINK = ".samples"
 MEDIA_DIR = "/var/endless-content"
 
-LICENSE_XLS = "LICENSE.xls"
-LICENSE_CSV = "LICENSE.csv"
-
-
-def create_csv(orig, dest):
-    temp = tempfile.mkdtemp()
-    orig_file = os.path.basename(orig)
-    split_file = os.path.splitext(orig_file)
-    csv_file = os.path.join(temp, split_file[0] + '.csv')
-    call(['libreoffice', '--headless', '--convert-to', 'csv', '--outdir', temp, orig])
-    call(['iconv', '-f', 'cp1250', '-t', 'utf-8', csv_file, '-o', dest])
-    shutil.rmtree(temp)
+LICENSE_CSV = ".LICENSE.csv"
 
 
 def get_title(row, locale):
@@ -60,13 +46,10 @@ def rename_file_locale(directory, csvreader, to_locale):
 
 
 def update_files_locale(directory, to_locale):
-    temp_dir = tempfile.gettempdir()
-    license_file = os.path.join(temp_dir, LICENSE_CSV)
-    create_csv(os.path.join(directory, LICENSE_XLS), license_file)
+    license_file = os.path.join(directory, LICENSE_CSV)
     with open(license_file) as csv_file:
         csvreader = csv.DictReader(csv_file)
         rename_file_locale(directory, csvreader, to_locale)
-    os.remove(license_file)
 
 
 def get_samples(locale):
@@ -88,14 +71,12 @@ def update_dir_link(orig, dest, new_locale):
             current_dir = os.path.join(dest, current_dir)
         if os.path.islink(current_dir):
             os.remove(current_dir)
-    else:
-        return
+        os.remove(samples_file)
 
     new_dir = os.path.join(dest, get_samples(new_locale))
     if os.path.exists(new_dir):
         return
 
-    os.remove(samples_file)
     os.symlink(orig, new_dir)
     os.symlink(new_dir, samples_file)
 
