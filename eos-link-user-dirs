@@ -11,7 +11,6 @@ SAMPLES = { 'C':  "Samples",
             'es': "Ejemplos",
             'pt': "Amostras" }
 
-SAMPLES_LINK = ".samples"
 MEDIA_DIR = "/var/endless-content"
 
 LICENSE_CSV = ".LICENSE.csv"
@@ -64,21 +63,17 @@ def get_samples(locale):
     
 
 def update_dir_link(orig, dest, new_locale):
-    samples_file = os.path.join(dest, SAMPLES_LINK)
-    if os.path.islink(samples_file):
-        current_dir = os.readlink(samples_file)
-        if not os.path.isabs(current_dir):
-            current_dir = os.path.join(dest, current_dir)
-        if os.path.islink(current_dir):
-            os.remove(current_dir)
-        os.remove(samples_file)
-
-    new_dir = os.path.join(dest, get_samples(new_locale))
-    if os.path.exists(new_dir):
-        return
-
-    os.symlink(orig, new_dir)
-    os.symlink(new_dir, samples_file)
+    new_samples = get_samples(new_locale)
+    for samples in SAMPLES.values():
+        samples_dir = os.path.join(dest, samples)
+        if samples == new_samples:
+            # Create the link using the current translation of 'Samples'
+            if not os.path.exists(samples_dir):
+                os.symlink(orig, samples_dir)
+        else:
+            # Remove any existing link with an old translation of 'Samples'
+            if os.path.islink(samples_dir):
+                os.remove(samples_dir)
 
 
 new_locale = locale.getdefaultlocale()[0]
