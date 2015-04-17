@@ -1,0 +1,48 @@
+File name	License	Link
+bg_brazil_01.jpg	Attribution 2.0 Generic (CC BY 2.0)	https://www.flickr.com/photos/demiam/13071505525/
+bg_global_01.jpg	Attribution 2.0 Generic (CC BY 2.0)	https://www.flickr.com/photos/tshermankb/8410529726/
+bg_global_02.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://www.pexels.com/photo/1603/
+bg_global_03.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://unsplash.com/
+bg_global_04.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://unsplash.com/
+bg_global_05.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://unsplash.com/
+bg_global_06.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://unsplash.com/
+bg_global_07.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://unsplash.com/
+bg_global_08.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://unsplash.com/
+bg_global_09.jpg	Public Domain Dedication (CC0 1.0 Universal)	http://unsplash.com/
+bg_guatemala_01.jpg	Attribution 2.0 Generic (CC BY 2.0)	https://www.flickr.com/photos/lauri_vain/2300705974/
+bg_guatemala_02.jpg	Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)	https://www.flickr.com/photos/alq666/2339447680/
+bg_guatemala_03.jpg	Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)	http://commons.wikimedia.org/wiki/File:Lake_Atitl%C3%A1n.jpg
+bg_guatemala_04.jpg	Attribution 2.0 Generic (CC BY 2.0)	https://www.flickr.com/photos/tfjensen/7987886264/
+bg_guatemala_05.jpg	Attribution-NoDerivs 2.0 Generic (CC BY-ND 2.0)	https://www.flickr.com/photos/aisforangie/6798673462/
+bg_guatemala_06.jpg	Attribution-NoDerivs 2.0 Generic (CC BY-ND 2.0)	https://www.flickr.com/photos/-nach-/5072555571/
+bg_guatemala_07.jpg	Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)	https://www.flickr.com/photos/didierbaertschiger/4470207135/
+unsplash_522aab8718598_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_522af94630a3d_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_522af9ac823b4_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_522b53fb137bb_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_522cb8dbbe680_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_523136e951a4a_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_5239d6c04342c_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_523b6080353ef_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_523bf67db73f1_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_523fda1064048_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_52403df6209f9_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_5244804364ab0_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_524e281add2d1_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_52580ca759efe_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_5259a34e5d050_1.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_Bird-Profile-Wellington-New-Zealand.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_blurred_lines.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_cat-nose-up.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_green-bike.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_Gutman_Karakul_lake.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_kitsune.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_man-fishing.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_mason-jars.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_MtEverest_NEP0555.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_prick.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_rula-sibai-pink-flowers.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_sea.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_sky-rose.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_trash-can.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
+unsplash_vectorbeastcom-grass-sun.jpg	Public Domain (GNU Free Documentation License, V1.3)	http://unsplash.com/
