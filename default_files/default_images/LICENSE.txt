@@ -1,5 +1,10 @@
 File name	License	Author / Source	Original File URL	Modifications
 bg_brazil_01.jpg	Attribution 2.0 Generic (CC BY 2.0)		https://www.flickr.com/photos/demiam/13071505525/	
+bg_china_01.jpg	CC2.0	Toon Bronselaer	https://www.flickr.com/photos/t00n/5213857763/	color adjustments, gradient overlays
+bg_china_02.jpg	CC2.0	Jannes Glas	https://www.flickr.com/photos/januski83/24638276270/	slight color adjustment
+bg_china_03.jpg	CC0 Public Domain		https://pixabay.com/en/sunset-china-pagoda-lotus-flowers-952629/	
+bg_china_04.jpg	CC2.0	George Lu	https://www.flickr.com/photos/gzlu/7708851288/	slight color adjustment
+bg_china_05.jpg	CC2.0	Dai Luo	https://www.flickr.com/photos/dailuo/5438987806/	
 bg_global_01.jpg	Attribution 2.0 Generic (CC BY 2.0)		https://www.flickr.com/photos/tshermankb/8410529726/	
 bg_global_02.jpg	Public Domain Dedication (CC0 1.0 Universal)		http://www.pexels.com/photo/1603/	
 bg_global_03.jpg	Public Domain Dedication (CC0 1.0 Universal)		http://unsplash.com/	
@@ -16,6 +21,15 @@ bg_guatemala_04.jpg	Attribution 2.0 Generic (CC BY 2.0)		https://www.flickr.com/
 bg_guatemala_05.jpg	Attribution-NoDerivs 2.0 Generic (CC BY-ND 2.0)		https://www.flickr.com/photos/aisforangie/6798673462/	
 bg_guatemala_06.jpg	Attribution-NoDerivs 2.0 Generic (CC BY-ND 2.0)		https://www.flickr.com/photos/-nach-/5072555571/	
 bg_guatemala_07.jpg	Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)		https://www.flickr.com/photos/didierbaertschiger/4470207135/	
+bg_india_01.jpg	CC0 Public Domain		https://pixabay.com/en/girls-colourful-shawl-india-585077/	clone stamp to remove blemish
+bg-india_02.jpg	CC0 Public Domain		https://pixabay.com/en/temple-rishikesh-india-hindu-holy-1166023/	
+bg-indonesia_01.jpg	CC2.0	Rosino	https://www.flickr.com/photos/rosino/1393826530/	
+bg-kenya_01.jpg	CC2.0	Ninara	https://www.flickr.com/photos/ninara/17411565944/	
+bg-pakistan_01.jpg	CC0 Public Domain		https://pixabay.com/en/fort-lahore-pakistan-architecture-824774/	
+bg-rwanda_01.jpg	CC2.0	misssharongray	https://www.flickr.com/photos/sharongray/6732561951/	
+bg-tanzania_01.jpg	CC2.0	Yoni Lerner	https://www.flickr.com/photos/yeho/8209613841/	
+bg-tanzania_02.jpg	CC2.0	Harvey Barrison	https://www.flickr.com/photos/hbarrison/7592177616/	
+bg-thailand_01.jpg	CC0 Public Domain	Jonny Clow	https://unsplash.com/photos/bl5T3frR9pc	
 unsplash_522aab8718598_1.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
 unsplash_522af94630a3d_1.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
 unsplash_522af9ac823b4_1.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
