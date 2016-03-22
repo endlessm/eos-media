@@ -48,13 +48,13 @@ install-data-local:
 	@$(call install_pattern,$(images_instdir),$(images_srcdir)/*)
 	ln -fs $(images_instdir)/bg_global_02.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-C.jpg
 	ln -fs $(images_instdir)/bg_global_01.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-es_GT.jpg
-	ln -fs $(images_instdir)/bg_brazil_01.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-pt.jpg
+	ln -fs $(images_instdir)/bg_brazil_01.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-pt_BR.jpg
 
 uninstall-local:
 	@$(call uninstall_pattern,$(images_instdir),$(images_srcdir)/*)
 	rm -f $(DESTDIR)$(pkgdatadir)/desktop-background-C.jpg
 	rm -f $(DESTDIR)$(pkgdatadir)/desktop-background-es_GT.jpg
-	rm -f $(DESTDIR)$(pkgdatadir)/desktop-background-pt.jpg
+	rm -f $(DESTDIR)$(pkgdatadir)/desktop-background-pt_BR.jpg
 
 EXTRA_DIST += \
 	$(images_srcdir) \
