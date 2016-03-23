@@ -12,7 +12,9 @@ SAMPLES = { 'C':  "Samples",
             'ar': "عينات",
             'fr': "Exemples",
             'es': "Ejemplos",
-            'pt': "Amostras" }
+            'id': "Sampel",
+            'pt': "Amostras",
+            'zh': "样品" }
 
 OLD_SAMPLES_LINK = ".samples"
 MEDIA_DIR = "/var/endless-content"
