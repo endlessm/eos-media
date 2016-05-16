@@ -11,6 +11,13 @@ Homepage: http://www.endlessm.com
 
 Package: eos-media
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
+         eos-default-background
 Description: EndlessOS Media
  This is a package that contains the default media files (images, music, etc.)
+
+Package: eos-default-background
+Architecture: all
+Depends: ${misc:Depends}
+Description: EndlessOS default background
+ This is a package that contains the default wallpaper
