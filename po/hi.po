@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# e2f_in c7 <e2f_in_c7@outlook.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: eos-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-08 02:28+0000\n"
-"PO-Revision-Date: 2016-03-19 21:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-07-07 08:06+0000\n"
+"Last-Translator: e2f_in c7 <e2f_in_c7@outlook.com>\n"
 "Language-Team: Hindi (http://www.transifex.com/endless-mobile-inc/eos-media/language/hi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,32 +20,32 @@ msgstr ""
 
 #: eos-link-user-dirs
 msgid "Samples"
-msgstr ""
+msgstr "सेम्पल"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "100 Days of Dance"
-msgstr ""
+msgstr "100 डेज़ ऑफ़ डांस"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Big Buck Bunny"
-msgstr ""
+msgstr "बिग बक बनी"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Drifters of the Deep"
-msgstr ""
+msgstr "ड्रिफ़्र्टर्स ऑफ़ डीप"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Earth from Space"
-msgstr ""
+msgstr "अर्थ फ़्रॉम स्पेस"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Hexcopter"
-msgstr ""
+msgstr "हेग्ज़कॉप्टर"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Adventure in Brazil"
-msgstr ""
+msgstr "स्केटबोर्ड एडवेंचर इन ब्राज़िल"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Tricks"
-msgstr ""
+msgstr "स्केटबोर्ड ट्रिक्स"

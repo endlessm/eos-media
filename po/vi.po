@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: eos-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-08 02:28+0000\n"
-"PO-Revision-Date: 2016-04-16 04:24+0000\n"
+"PO-Revision-Date: 2016-07-03 06:02+0000\n"
 "Last-Translator: Roddy Shuler <roddy@endlessm.com>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/endless-mobile-inc/eos-media/language/vi/)\n"
 "MIME-Version: 1.0\n"
@@ -19,32 +19,32 @@ msgstr ""
 
 #: eos-link-user-dirs
 msgid "Samples"
-msgstr ""
+msgstr "Mẫu"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "100 Days of Dance"
-msgstr ""
+msgstr "Điệu nhảy 100 Ngày (100 Days of Dance)"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Big Buck Bunny"
-msgstr ""
+msgstr "Chú thỏ To lớn (Big Buck Bunny)"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Drifters of the Deep"
-msgstr ""
+msgstr "Sinh vật trôi nổi của Biển khơi (Drifters of the Deep)"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Earth from Space"
-msgstr ""
+msgstr "Trái đất nhìn từ Không gian"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Hexcopter"
-msgstr ""
+msgstr "Hexcopter"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Adventure in Brazil"
-msgstr ""
+msgstr "Phiêu lưu Skateboard ở Brazil"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Tricks"
-msgstr ""
+msgstr "Bí quyết Trượt ván"
