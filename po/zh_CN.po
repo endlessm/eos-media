@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Roddy Shuler <roddy@endlessm.com>, 2016
+# zhifeng peng <jnufeng@126.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: eos-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-08 02:28+0000\n"
-"PO-Revision-Date: 2016-03-22 04:29+0000\n"
-"Last-Translator: Roddy Shuler <roddy@endlessm.com>\n"
+"PO-Revision-Date: 2016-08-16 03:58+0000\n"
+"Last-Translator: zhifeng peng <jnufeng@126.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/endless-mobile-inc/eos-media/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,28 +25,28 @@ msgstr "样品"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "100 Days of Dance"
-msgstr ""
+msgstr "100天舞动"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Big Buck Bunny"
-msgstr ""
+msgstr "肥兔子邦尼"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Drifters of the Deep"
-msgstr ""
+msgstr "深海漂流"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Earth from Space"
-msgstr ""
+msgstr "太空中的地球"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Hexcopter"
-msgstr ""
+msgstr "Hexcopter"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Adventure in Brazil"
-msgstr ""
+msgstr "巴西滑板大冒险"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Tricks"
-msgstr ""
+msgstr "滑板技术"
