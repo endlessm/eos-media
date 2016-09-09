@@ -6,7 +6,7 @@ bg_china_03.jpg	CC0 Public Domain		https://pixabay.com/en/sunset-china-pagoda-lo
 bg_china_04.jpg	CC2.0	George Lu	https://www.flickr.com/photos/gzlu/7708851288/	slight color adjustment
 bg_china_05.jpg	CC2.0	Dai Luo	https://www.flickr.com/photos/dailuo/5438987806/	
 bg_global_01.jpg	Attribution 2.0 Generic (CC BY 2.0)		https://www.flickr.com/photos/tshermankb/8410529726/	
-bg_global_02.jpg	Public Domain Dedication (CC0 1.0 Universal)		http://www.pexels.com/photo/1603/	
+bg_global_02.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/landscape-nature-beautiful-sunlight-821492/	cut
 bg_global_03.jpg	Public Domain Dedication (CC0 1.0 Universal)		http://unsplash.com/	
 bg_global_04.jpg	Public Domain Dedication (CC0 1.0 Universal)		http://unsplash.com/	
 bg_global_05.jpg	Public Domain Dedication (CC0 1.0 Universal)		http://unsplash.com/	
