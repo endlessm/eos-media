@@ -22,27 +22,27 @@ bg_pakistan_01.jpg	CC0 Public Domain		https://pixabay.com/en/fort-lahore-pakista
 bg_rwanda_01.jpg	CC2.0	misssharongray	https://www.flickr.com/photos/sharongray/6732561951/	
 bg_tanzania_01.jpg	CC2.0	Yoni Lerner	https://www.flickr.com/photos/yeho/8209613841/	
 bg_thailand_01.jpg	CC0 Public Domain	Jonny Clow	https://unsplash.com/photos/bl5T3frR9pc	
-Blue Lake.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/16BJBiCIAic	cut
-Blue Night.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/veMLshzPEq0	cut
-Bright Valley.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/landscape-scotland-isle-of-skye-540115/	cut
-Calm Waters.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/ocean-calm-peace-peaceful-summer-1093382/	cut
-Colour Tiles.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/@aridley88?photo=jR4Zf-riEjI	cut
-Curious Bird.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/@rayhennessy?photo=PBjvkCDr3aQ	cut
-Frosted Grass.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/frost-on-grass-early-morning-frost-1358926/	cut
+Blue_Lake.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/16BJBiCIAic	cut
+Blue_Night.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/veMLshzPEq0	cut
+Bright_Valley.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/landscape-scotland-isle-of-skye-540115/	cut
+Calm_Waters.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/ocean-calm-peace-peaceful-summer-1093382/	cut
+Colour_Tiles.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/@aridley88?photo=jR4Zf-riEjI	cut
+Curious_Bird.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/@rayhennessy?photo=PBjvkCDr3aQ	cut
+Frosted_Grass.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/frost-on-grass-early-morning-frost-1358926/	cut
 Grasshopper.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/collections/135659/animals?photo=uzYgVGz0t1Q	cut
-Humming Bird.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/QifvZqd5akk	cut
-Little Crab.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/2_vQY1_DzuE	cut
-Lost Shell.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://imagefinder.co/photo/26812/	cut
-Pine Macro.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/search/photos/Manchester?photo=tvk4EKq9m_w	cut
-Rose Petals.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/collections/17098/floral-beauty?photo=2jZoHa8Q7Fo	cut
-Sand Desert.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/collections/997?photo=JXANugsHjCg	cut
-Sleepy Dog.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/@agmakonts?photo=JCXANpeR2XI	cut
-Solitary Island.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://imagefinder.co/photo/cape-tribulation-road-cape-tribulation-australia/	cut
-Sunset Hills.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/remote-landscape-travel-mountain-1209780/	cut
+Hummingbird.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/QifvZqd5akk	cut
+Little_Crab.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/2_vQY1_DzuE	cut
+Lost_Shell.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://imagefinder.co/photo/26812/	cut
+Pine_Macro.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/search/photos/Manchester?photo=tvk4EKq9m_w	cut
+Rose_Petals.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/collections/17098/floral-beauty?photo=2jZoHa8Q7Fo	cut
+Sand_Desert.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/collections/997?photo=JXANugsHjCg	cut
+Sleepy_Dog.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/@agmakonts?photo=JCXANpeR2XI	cut
+Solitary_Island.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://imagefinder.co/photo/cape-tribulation-road-cape-tribulation-australia/	cut
+Sunset_Hills.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/remote-landscape-travel-mountain-1209780/	cut
 unsplash_522af94630a3d_1.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
 unsplash_522b53fb137bb_1.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
 unsplash_523fda1064048_1.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
 unsplash_MtEverest_NEP0555.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
 unsplash_vectorbeastcom-grass-sun.jpg	Public Domain (GNU Free Documentation License, V1.3)		http://unsplash.com/	
-Windy Desert.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/MH3kcpZE5rA	cut
-Windy Grass.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/field-grass-sky-nature-earth-834375/	cut
+Windy_Desert.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://unsplash.com/photos/MH3kcpZE5rA	cut
+Windy_Grass.jpg	Public Domain Dedication (CC0 1.0 Universal)		https://pixabay.com/en/field-grass-sky-nature-earth-834375/	cut
