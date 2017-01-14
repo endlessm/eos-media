@@ -10,10 +10,15 @@ from gi.repository import GLib
 
 SAMPLES = { 'C':  "Samples",
             'ar': "عينات",
-            'fr': "Exemples",
+            'bn': "নমুনা",
+            'de': "Beispiele",
             'es': "Ejemplos",
+            'fr': "Exemples",
+            'hi': "सेम्पल",
             'id': "Sampel",
             'pt': "Amostras",
+            'th': "ตัวอย่าง",
+            'vi': "Mẫu",
             'zh': "样品" }
 
 OLD_SAMPLES_LINK = ".samples"
