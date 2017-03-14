@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# georgian balan <braila222@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: eos-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-08 02:28+0000\n"
-"PO-Revision-Date: 2016-12-14 07:47+0000\n"
-"Last-Translator: Vicki Niu <vicki@endlessm.com>\n"
+"PO-Revision-Date: 2017-03-12 15:34+0000\n"
+"Last-Translator: georgian balan <braila222@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/endless-mobile-inc/eos-media/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,32 +20,32 @@ msgstr ""
 
 #: eos-link-user-dirs
 msgid "Samples"
-msgstr ""
+msgstr "Monstre"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "100 Days of Dance"
-msgstr ""
+msgstr "100 De zile de Dans"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Big Buck Bunny"
-msgstr ""
+msgstr "Big Buck Bunny"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Drifters of the Deep"
-msgstr ""
+msgstr "Drifters of the Deep"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Earth from Space"
-msgstr ""
+msgstr "Pamantul din Spatiu"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Hexcopter"
-msgstr ""
+msgstr "Hexcopter"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Adventure in Brazil"
-msgstr ""
+msgstr "Aventuri pe skateboard in Brazilia"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Tricks"
-msgstr ""
+msgstr "Trucuri pe skateboard"
