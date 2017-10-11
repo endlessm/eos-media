@@ -17,6 +17,7 @@ SAMPLES = { 'C':  "Samples",
             'hi': "सेम्पल",
             'id': "Sampel",
             'pt': "Amostras",
+            'ro': "Monstre",
             'th': "ตัวอย่าง",
             'vi': "Mẫu",
             'zh': "样品" }
