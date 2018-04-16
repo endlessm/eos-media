@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: eos-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-08 02:28+0000\n"
-"PO-Revision-Date: 2017-01-09 06:00+0000\n"
-"Last-Translator: Roddy Shuler <roddy@endlessm.com>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/endless-mobile-inc/eos-media/language/zh_TW/)\n"
+"PO-Revision-Date: 2017-11-20 18:01+0000\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/endless-os/eos-media/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +32,7 @@ msgstr "大雄兔"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Drifters of the Deep"
-msgstr "深海漂流者（Drifters of the Deep）"
+msgstr "深海漂流者"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Earth from Space"
@@ -39,12 +40,12 @@ msgstr "太空看地球"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Hexcopter"
-msgstr "無人機 (Hexcopter)"
+msgstr "無人機"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Adventure in Brazil"
-msgstr "在巴西滑板冒險"
+msgstr "巴西的滑板冒險"
 
 #: Videos/Samples/.LICENSE.csv
 msgid "Skateboard Tricks"
-msgstr "滑板技巧"
+msgstr "滑板特技"
