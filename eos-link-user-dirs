@@ -96,8 +96,8 @@ def update_dir_link(orig, dest, new_locale):
 
 new_locale = locale.getdefaultlocale()[0]
 
-update_dir_link(path.join(MEDIA_DIR, "music"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_MUSIC), new_locale)
-update_dir_link(path.join(MEDIA_DIR, "pictures"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_PICTURES), new_locale)
-update_dir_link(path.join(MEDIA_DIR, "videos"), GLib.get_user_special_dir(GLib.USER_DIRECTORY_VIDEOS), new_locale)
+update_dir_link(path.join(MEDIA_DIR, "music"), GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_MUSIC), new_locale)
+update_dir_link(path.join(MEDIA_DIR, "pictures"), GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_PICTURES), new_locale)
+update_dir_link(path.join(MEDIA_DIR, "videos"), GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_VIDEOS), new_locale)
 
 update_files_locale(path.join(MEDIA_DIR, "videos"), new_locale);
