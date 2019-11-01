@@ -12,4 +12,4 @@ config.status
 configure
 install-sh
 missing
-data/endlessos-backgrounds-*.xml
+data/endlessos-backgrounds.xml
