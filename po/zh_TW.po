@@ -17,35 +17,3 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: eos-link-user-dirs
-msgid "Samples"
-msgstr "範例"
-
-#: Videos/Samples/.LICENSE.csv
-msgid "100 Days of Dance"
-msgstr "百日之舞"
-
-#: Videos/Samples/.LICENSE.csv
-msgid "Big Buck Bunny"
-msgstr "大雄兔"
-
-#: Videos/Samples/.LICENSE.csv
-msgid "Drifters of the Deep"
-msgstr "深海漂流者"
-
-#: Videos/Samples/.LICENSE.csv
-msgid "Earth from Space"
-msgstr "太空看地球"
-
-#: Videos/Samples/.LICENSE.csv
-msgid "Hexcopter"
-msgstr "無人機"
-
-#: Videos/Samples/.LICENSE.csv
-msgid "Skateboard Adventure in Brazil"
-msgstr "巴西的滑板冒險"
-
-#: Videos/Samples/.LICENSE.csv
-msgid "Skateboard Tricks"
-msgstr "滑板特技"
