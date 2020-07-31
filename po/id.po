@@ -16,3 +16,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: eos-link-user-dirs
+msgid "Samples"
+msgstr "Sampel"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "100 Days of Dance"
+msgstr "100 Hari Menari"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Big Buck Bunny"
+msgstr "Buck Si Kelinci Besar"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Drifters of the Deep"
+msgstr "Penyelam Kedalaman"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Earth from Space"
+msgstr "Bumi dari Luar Angkasa"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Hexcopter"
+msgstr "Hexcopter"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Adventure in Brazil"
+msgstr "Petualangan Papan Seluncur di Brazil"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Tricks"
+msgstr "Trik Papan Seluncur"

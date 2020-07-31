@@ -1,8 +1,9 @@
 SUBDIRS = data
 
-bin_SCRIPTS =
+bin_SCRIPTS = eos-link-user-dirs
 
 EXTRA_DIST = \
+	eos-link-user-dirs \
 	$(NULL)
 
 CLEANFILES = \

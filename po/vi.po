@@ -16,3 +16,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: eos-link-user-dirs
+msgid "Samples"
+msgstr "Mẫu"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "100 Days of Dance"
+msgstr "Điệu nhảy 100 Ngày (100 Days of Dance)"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Big Buck Bunny"
+msgstr "Chú thỏ To lớn (Big Buck Bunny)"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Drifters of the Deep"
+msgstr "Sinh vật trôi nổi của Biển khơi (Drifters of the Deep)"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Earth from Space"
+msgstr "Trái đất nhìn từ Không gian"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Hexcopter"
+msgstr "Hexcopter"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Adventure in Brazil"
+msgstr "Phiêu lưu Skateboard ở Brazil"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Tricks"
+msgstr "Bí quyết Trượt ván"

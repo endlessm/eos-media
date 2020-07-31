@@ -16,3 +16,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: eos-link-user-dirs
+msgid "Samples"
+msgstr "عينات"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "100 Days of Dance"
+msgstr "100 يوم للرقص"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Big Buck Bunny"
+msgstr "بيغ باك باني"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Drifters of the Deep"
+msgstr "التائهون في الأعماق"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Earth from Space"
+msgstr "منظر الأرض من الفضاء"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Hexcopter"
+msgstr "هيكس كوبتر"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Adventure in Brazil"
+msgstr "مغامرة تزلج في البرازيل"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Tricks"
+msgstr "حيل ألواح التزلج"

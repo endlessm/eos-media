@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+
+import locale
+import csv
+
+from sys import stderr
+from os import path, rename, remove, symlink
+
+from gi.repository import GLib
+
+SAMPLES = { 'C':  "Samples",
+            'ar': "عينات",
+            'bn': "নমুনা",
+            'de': "Beispiele",
+            'es': "Ejemplos",
+            'fr': "Exemples",
+            'hi': "सेम्पल",
+            'id': "Sampel",
+            'pt': "Amostras",
+            'ro': "Monstre",
+            'th': "ตัวอย่าง",
+            'vi': "Mẫu",
+            'zh': "样品" }
+
+OLD_SAMPLES_LINK = ".samples"
+MEDIA_DIR = "/var/endless-content"
+
+LICENSE_CSV = ".LICENSE.csv"
+
+def get_title(row, locale):
+    filename_row = 'File name [' + locale + ']'
+    if filename_row in row:
+        return row[filename_row]
+
+    generic_locale = locale.split("_")[0]
+    if generic_locale == locale:
+        return row['File name']
+    else:
+        return get_title(row, generic_locale)
+
+def rename_file_locale(directory, csvreader, to_locale):
+    for row in csvreader:
+        for key in row.keys():
+            if not key.startswith("File name"):
+                continue
+            from_filename = path.join(directory, row[key])
+            if path.exists(from_filename):
+                break
+        to_title = get_title(row, to_locale)
+        if not path.exists(from_filename) or not to_title:
+            continue
+        to_filename = path.join(directory, to_title)
+        if from_filename != to_filename:
+            rename(from_filename, to_filename)
+
+def update_files_locale(directory, to_locale):
+    license_file = path.join(directory, LICENSE_CSV)
+    if not path.exists(license_file):
+        print("Could not find video license file. Ignoring", file = stderr)
+        return
+
+    with open(license_file) as csv_file:
+        csvreader = csv.DictReader(csv_file)
+        rename_file_locale(directory, csvreader, to_locale)
+
+def get_samples(locale):
+    if locale in SAMPLES:
+        return SAMPLES[locale]
+
+    generic_locale = locale.split("_")[0]
+    if generic_locale == locale:
+        return SAMPLES['C']
+    else:
+        return get_samples(generic_locale)
+
+def update_dir_link(orig, dest, new_locale):
+    # Remove the obsolete .samples link if exists
+    old_samples_file = path.join(dest, OLD_SAMPLES_LINK)
+    if path.islink(old_samples_file):
+        remove(old_samples_file)
+
+    new_samples = get_samples(new_locale)
+    for samples in SAMPLES.values():
+        samples_dir = path.join(dest, samples)
+        if samples == new_samples:
+            # Create the link using the current translation of 'Samples'
+            if not path.lexists(samples_dir):
+                if path.exists(orig):
+                    symlink(orig, samples_dir)
+                else:
+                    print("Original directory %s not found. Not Linking" % orig, file = stderr)
+        else:
+            # Remove any existing link with an old translation of 'Samples'
+            if path.islink(samples_dir):
+                remove(samples_dir)
+
+new_locale = locale.getdefaultlocale()[0]
+
+update_dir_link(path.join(MEDIA_DIR, "music"), GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_MUSIC), new_locale)
+update_dir_link(path.join(MEDIA_DIR, "pictures"), GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_PICTURES), new_locale)
+update_dir_link(path.join(MEDIA_DIR, "videos"), GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_VIDEOS), new_locale)
+
+update_files_locale(path.join(MEDIA_DIR, "videos"), new_locale);

@@ -17,3 +17,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: bn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: eos-link-user-dirs
+msgid "Samples"
+msgstr "নমুনা"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "100 Days of Dance"
+msgstr "নৃত্যের 100 দিন"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Big Buck Bunny"
+msgstr "বড় বাজেটের খরগোশ"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Drifters of the Deep"
+msgstr "গভীরের অভিযাত্রী"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Earth from Space"
+msgstr "মহাশূন্য থেকে পৃথিবী"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Hexcopter"
+msgstr "হেক্সকপ্টার"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Adventure in Brazil"
+msgstr "ব্রাজিলে স্কেটবোর্ড অভিযান"
+
+#: Videos/Samples/.LICENSE.csv
+msgid "Skateboard Tricks"
+msgstr "স্কেটবোর্ডের কৌশলসমূহ"
