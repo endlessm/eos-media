@@ -47,7 +47,7 @@ uninstall_pattern = \
 # cannot be a symlink
 install-data-local:
 	@$(call install_pattern,$(images_instdir),$(images_srcdir)/*)
-	cp $(DESTDIR)$(images_instdir)/bg_global_11.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-C.jpg
+	cp $(DESTDIR)$(images_instdir)/Blue_Night.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-C.jpg
 	ln -fs $(images_instdir)/bg_global_01.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-es_GT.jpg
 	ln -fs $(images_instdir)/bg_fnde_01.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-fnde.jpg
 	ln -fs $(images_instdir)/bg_brazil_01.jpg $(DESTDIR)$(pkgdatadir)/desktop-background-pt_BR.jpg
