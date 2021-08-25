@@ -1,25 +1,26 @@
 Source: eos-media
 Section: non-free/misc
 Priority: extra
-Maintainer: Endless Mobile <maintainers@endlessm.com>
+Maintainer: Endless OS Foundation <maintainers@endlessos.org>
 Build-Depends: debhelper (>= 7.0.0),
                cdbs,
                gnome-pkg-tools,
-               dh-autoreconf      
+               dh-autoreconf
 Standards-Version: 3.9.2
-Homepage: http://www.endlessm.com
+Homepage: http://www.endlessos.org/
 
 Package: eos-media
 Architecture: all
 Depends: ${misc:Depends},
          eos-default-background (>= 1.4.0)
-Description: EndlessOS Media
- This is a package that contains the default media files (images, music, etc.)
+Description: Endless OS wallpapers
+ This package contains pre-installed wallpapers, and configuration to make them
+ appear in GNOME Settings.
 
 Package: eos-default-background
 Architecture: all
 Depends: ${misc:Depends}
 Replaces: eos-media (<< 1.4.0)
 Breaks: eos-media (<< 1.4.0)
-Description: EndlessOS default background
- This is a package that contains the default wallpaper
+Description: Endless OS default background
+ This package contains the default wallpaper.
