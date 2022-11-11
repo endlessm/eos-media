@@ -3,7 +3,7 @@ eos-media (1.4.0) eos; urgency=medium
   * Split default background into its own package, so that the installer
     images can depend on it.
 
- -- Cosimo Cecchi <cosimo@endlessm.com>  Wed May 18 15:04:24 2016 -0700
+ -- Cosimo Cecchi <cosimo@endlessm.com>  Wed, 18 May 2016 15:04:24 -0700
 
 eos-media (1.1.5~dev1) unstable; urgency=low
 
