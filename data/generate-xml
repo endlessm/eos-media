@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+import argparse
+import os
+import textwrap
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--datadir", default="/usr/share")
+    ap.add_argument("directory")
+    args = ap.parse_args()
+
+    images = sorted(x for x in os.listdir(args.directory) if x.endswith(".jpg"))
+    print(
+        """
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>""".strip(
+            "\n"
+        )
+    )
+    for i in images:
+        print(
+            f"""
+  <wallpaper deleted="false">
+    <name>Background {i}</name>
+    <filename>{args.datadir}/eos-media/default_images/{i}</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3465a4</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>""".lstrip(
+                "\n"
+            )
+        )
+    print("</wallpapers>")
+
+
+if __name__ == "__main__":
+    main()
