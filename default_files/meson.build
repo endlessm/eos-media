@@ -6,8 +6,13 @@ install_subdir(
 # The default background is shipped in a separate package, eos-default-background, so
 # cannot be a symlink
 install_data(
-    'default_images/River_Surrounded_by_Mountains.jpg',
+    'default_images/eos6-mountains.jpg',
     rename: ['desktop-background-C.jpg'],
+    install_dir: pkgdatadir,
+)
+install_data(
+    'default_images/eos6-mountains-night.jpg',
+    rename: ['desktop-background-dark-C.jpg'],
     install_dir: pkgdatadir,
 )
 
@@ -23,4 +28,3 @@ foreach link_name, target : {
         pointing_to: 'default_images' / target,
     )
 endforeach
-
