@@ -12,4 +12,4 @@ As of Endless OS 6, we provide a dark variant of the default wallpaper
 2. Update the paths to those wallpapers in `default_files/meson.build`
 3. Add licensing information to `default_files/default_images/LICENSE.tsv`
 
-Since the wallpapers are renamed during the build process, the default wallpaper XML does not need to be updated.
+Since the default wallpapers are also installed with a standardized default file name during the build process, the dynamic wallpaper XML does not need to be updated.
