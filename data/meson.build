@@ -11,3 +11,7 @@ custom_target(
     install: true,
     install_dir: datadir / 'gnome-background-properties',
 )
+install_data(
+    'endlessos-dynamic.xml',
+    install_dir: datadir / 'gnome-background-properties',
+)

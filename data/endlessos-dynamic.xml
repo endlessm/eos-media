@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Endless OS Dynamic</name>
+    <filename>/usr/share/eos-media/desktop-background-C.jpg</filename>
+    <filename-dark>/usr/share/eos-media/desktop-background-dark-C.jpg</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#eaa290</pcolor>
+    <scolor>#dc6347</scolor>
+  </wallpaper>
+</wallpapers>
+
