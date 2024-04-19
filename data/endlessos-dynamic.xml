@@ -2,7 +2,7 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper deleted="false">
-    <name>Endless OS Default</name>
+    <name>Endless OS Dynamic</name>
     <filename>/usr/share/eos-media/desktop-background-C.jpg</filename>
     <filename-dark>/usr/share/eos-media/desktop-background-dark-C.jpg</filename-dark>
     <options>zoom</options>
